@@ -1,0 +1,107 @@
+
+.ticket-navigation {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.ticket-navigation-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ticket-navigation-heading h3 {
+  margin: 0 0 8px;
+  color: #172033;
+  font-size: 19px;
+}
+
+.ticket-navigation-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.navigation-badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.ticket-map {
+  height: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.fixflow-destination-marker {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.ticket-navigation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.ticket-route-button,
+.ticket-start-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ticket-route-button {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.ticket-start-button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.ticket-start-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ticket-navigation-error {
+  margin: 12px 0;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .ticket-navigation {
+    padding: 14px;
+  }
+
+  .ticket-map {
+    height: 260px;
+  }
+
+  .ticket-navigation-actions button {
+    width: 100%;
+  }
+}

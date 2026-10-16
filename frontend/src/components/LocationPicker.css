@@ -1,0 +1,79 @@
+
+.location-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  color: #1f2937;
+}
+
+.location-search {
+  display: flex;
+  gap: 8px;
+}
+
+.location-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.location-search button,
+.current-location-button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.current-location-button {
+  align-self: flex-start;
+  background: #111827;
+}
+
+.location-search button:disabled,
+.current-location-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.location-hint {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.location-map {
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+}
+
+.location-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.selected-location {
+  padding: 14px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.selected-location p {
+  margin: 8px 0;
+}
+
+.selected-location small {
+  color: #4b5563;
+}
